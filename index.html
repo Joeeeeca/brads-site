@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/557667a600.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/8831cf367723218548e76f587/851fb31fa0d6a0983bda046ec.js");</script>
+</head>
+<body>
+
+
+  <!-- Basket side menu -->
+  <div class="basket-menu" id="basket-menu">
+    <div class="basket-menu-content">
+        <span class="close-button" onclick="closeBasketMenu()">&times;</span>
+        <h2>Basket</h2>
+        <ul id="basket-items"></ul> <!-- List for displaying basket items -->
+        <div class="subtotal" id="subtotal"></div> <!-- Subtotal container -->
+    </div>
+</div>
+
+<div class="header-navigation">
+    <img class="logo" src="#" alt="logo">
+    <div class="searchbar-container">
+        <input id="searchInput" class="searchbar" type="search" placeholder="Find a Book">
+        <button class="search-button"><span><i class="fa-solid fa-magnifying-glass"></i></span></button>
+    </div>
+    <i class="fas fa-shopping-basket" id="basket" onclick="openBasketMenu()"></i> <!-- Basket icon -->
+</div>
+
+<!-- Products Section -->
+<div class="product-container">
+    <!-- Product 1 -->
+    <div class="product-item" data-name="Team Basketball Orange Basketball Size 7" data-price="19.99" style="display: none;">
+        <img src="basketball.jpg" alt="Product 1" class="product-image">
+        <div class="product-details">
+            <div class="product-details-text">
+                <h3>Team Basketball Orange Basketball Size 7</h3>
+            </div>
+            <div class="product-info">
+                <span class="product-price">$19.99</span>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 2 -->
+    <div class="product-item" data-name="Under Armour Men's Sportstyle Lc Ss Super Soft Men's T Shirt for Training and Fitness" data-price="29.99" style="display: none;">
+        <img src="tshirt.jpg" alt="Product 2" class="product-image">
+        <div class="product-details">
+            <div class="product-details-text">
+                <h3>Under Armour Men's Sportstyle Lc Ss Super Soft Men's T Shirt for Training and Fitness</h3>
+            </div>
+            <div class="product-info">
+                <span class="product-price">$29.99</span>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 3 -->
+    <div class="product-item" data-name="Mason Cash Embossed Honeycomb Pink Mug, 35 CL" data-price="9.99" style="display: none;">
+        <img src="mug.jpg" alt="Product 3" class="product-image">
+        <div class="product-details">
+            <div class="product-details-text">
+                <h3>Mason Cash Embossed Honeycomb Pink Mug, 35 CL</h3>
+            </div>
+            <div class="product-info">
+                <span class="product-price">$9.99</span>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+        </div>
+    </div>
+    <!-- Product 4 -->
+    <div class="product-item" data-name="Luna Wireless Controller" data-price="39.99" style="display: none;">
+        <img src="controller.jpg" alt="Product 4" class="product-image">
+        <div class="product-details">
+            <div class="product-details-text">
+                <h3>Luna Wireless Controller</h3>
+            </div>
+            <div class="product-info">
+                <span class="product-price">$39.99</span>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+        </div>
+    </div>
+    <!--Product 5-->
+    <div class="product-item" data-name="Luna Wireless Controller" data-price="39.99" style="display: none;">
+        <img src="controller.jpg" alt="Product 4" class="product-image">
+        <div class="product-details">
+            <div class="product-details-text">
+                <h3>Luna Wireless Controller</h3>
+            </div>
+            <div class="product-info">
+                <span class="product-price">$39.99</span>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+        </div>
+    </div>
+    <!--Product 6-->
+    <div class="product-item" data-name="Luna Wireless Controller" data-price="39.99" style="display: none;">
+        <img src="controller.jpg" alt="Product 4" class="product-image">
+        <div class="product-details">
+            <div class="product-details-text">
+                <h3>Luna Wireless Controller</h3>
+            </div>
+            <div class="product-info">
+                <span class="product-price">$39.99</span>
+                <button class="add-to-basket">Add to Basket</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Existing section -->
+<div class="container">
+    <div class="row">
+        <div class="box">
+            <img class="homepage_image1" src="img-1.jpg" alt="Image 1">
+        </div>
+        <div class="box">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="box">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+            </p>
+        </div>
+        <div class="box">
+            <img src="img-2.jpg" alt="Image 2">
+        </div>
+    </div>
+</div>
+
+<section class="email-subscription-section">
+    <div class="form-container">
+        <div class="form-text">
+            <h1 class="form-heading">Subscribe!</h1>
+            <p class="form-subtext">Please enter your details below to subscribe:</p>
+        </div>
+        <form id="subscription-form" action="https://github.us21.list-manage.com/subscribe/post?u=8831cf367723218548e76f587&amp;id=3e00546c88&amp;f_id=000df7e6f0" method="POST">
+            <input type="email" id="email" name="EMAIL" placeholder="Email address" required>
+            <input type="text" id="name" name="FNAME" placeholder="First Name" required>
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+        </form>
+    </div>
+    <div id="thank-you-section" style="display: none;">
+        <!-- Your custom thank you message or section content goes here -->
+        <h1>Thank you for subscribing!</h1>
+    </div>
+</section>
+
+<section class="home-banner">
+    <div class="carousel">
+        <div class="carousel-inner">
+          <div class="item">
+            <img src="controller.jpg" alt="Product 1">
+            <h3>Luna Wireless Controller</h3>
+            <p>$39.99</p>
+          </div>
+          <div class="item">
+            <img src="Basketball.jpg" alt="Product 2">
+            <h3>Basketball</h3>
+            <p>$19.99</p>
+          </div>
+          <div class="item">
+            <img src="mug.jpg" alt="Product 2">
+            <h3>mug</h3>
+            <p>$9.99</p>
+          </div>
+          <div class="item">
+            <img src="controller.jpg" alt="Product 2">
+            <h3>Luna Wireless Controller</h3>
+            <p>$39.99</p>
+          </div>
+          <div class="item">
+            <img src="Basketball.jpg" alt="Product 2">
+            <h3>Basketball</h3>
+            <p>$19.99</p>
+          </div>
+          <div class="item">
+            <img src="mug.jpg" alt="Product 2">
+            <h3>mug</h3>
+            <p>$9.99</p>
+          </div>
+          <div class="item">
+            <img src="controller.jpg" alt="Product 2">
+            <h3>Luna Wireless Controller</h3>
+            <p>$39.99</p>
+          </div>
+          <div class="item">
+            <img src="Basketball.jpg" alt="Product 2">
+            <h3>Basketball</h3>
+            <p>$19.99</p>
+          </div>
+          <div class="item">
+            <img src="mug.jpg" alt="Product 2">
+            <h3>mug</h3>
+            <p>$9.99</p>
+          </div>
+          <div class="item">
+            <img src="controller.jpg" alt="Product 2">
+            <h3>Luna Wireless Controller</h3>
+            <p>$39.99</p>
+          </div>
+          <div class="item">
+            <img src="Basketball.jpg" alt="Product 2">
+            <h3>Basketball</h3>
+            <p>$19.99</p>
+          </div>
+          <!-- Add more items as needed -->
+        </div>
+      </div>
+</section>
+
+
+
+
+
+
+
+   <script src="script.js"></script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        document.getElementById('subscription-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Here you can add code to handle form submission, for example, submitting data via AJAX
+            
+            // Simulating a successful submission
+            // You can replace this with your actual submission logic
+            // For example, using fetch or XMLHttpRequest to send the form data to your server
+            
+            // Display thank you message
+            document.getElementById('thank-you-section').style.display = 'block'; // Display the existing thank you section
+
+            // Hide the form
+            document.getElementById('subscription-form').style.display = 'none';
+        });
+    });
+</script>
+  
+</body>
+</html>
