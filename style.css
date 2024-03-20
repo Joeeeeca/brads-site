@@ -1,0 +1,996 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    box-sizing:border-box;
+}
+
+/*Navbar Styles*/
+
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #393839;
+  height: 80px;
+  padding: 0 5%; /* Increased padding */
+}
+
+.middle-section {
+  display: flex;
+  align-items: center;
+}
+
+.searchbar-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Move the search bar to the right */
+}
+  
+  .logo {
+    margin-top:0px;
+    width:180px;
+  }
+  
+  .searchbar {
+    padding: 10px 40px 10px 10px;
+    width: 200px;
+    background-color: #393839;
+    border: 1px solid white;
+    caret-color: white;
+    color: white;
+  }
+  
+  .searchbar::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
+  
+  .searchbar::placeholder {
+    color: white;
+  }
+  
+  .searchbar-container {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allow the search bar to take up available space */
+    justify-content: center; /* Center the search bar horizontally */
+    position: relative; /* Add this line */
+  }
+  
+  .searchbar {
+    padding: 10px 40px 10px 10px;
+    width: 200px;
+    background-color: #393839;
+    border: 1px solid white;
+    caret-color: white;
+    color: white;
+    position: relative; /* Add this line */
+  }
+  
+  .search-button {
+    background-color: #f0f0f0; /* Lighter grey background color */
+    border: none;
+    cursor: pointer;
+    margin-left: 0px; /* Adjusted margin to give space between the icon and the input */
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height:38px;
+    width:30px;
+  }
+  
+  .search-button span {
+    font-size: 18px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dropdown-menu {
+    z-index:99;
+  }
+  
+  .dropdown-menu li {
+    list-style: none;
+    margin-right: 20px;
+    display: inline-block;
+    padding: 0 15px;
+    position: relative;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .dropdown-menu li a {
+    color: #fff;
+  }
+  
+  .dropdown-menu li a:hover {
+    color: #3ca0e7;
+  }
+  
+  .dropdown-menu li:hover {
+    cursor: pointer;
+  }
+
+.dropdown-menu .dropdown-submenu {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  padding-left: 0;
+  left: 0;
+  top: 20px;
+  display: none;
+  background: white;
+}
+
+.dropdown-menu li:hover .dropdown-submenu {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  min-width: 250px;
+  text-align: left;
+  padding-top: 20px;
+  box-shadow: 0px 3px 5px -1px #ccc;
+}
+
+.dropdown-menu .dropdown-submenu li {
+  clear: both;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 20px;
+  border-style: none;
+}
+
+.dropdown-menu .dropdown-submenu li a {
+  color: black;
+}
+
+.dropdown-menu .dropdown-submenu li a:hover {
+  padding-left: 10px;
+  border-left: 2px solid #3ca0e7;
+  transition: all 0.3s ease;
+  }
+a {
+
+  text-decoration: none;
+  &:hover {
+      color: #3CA0E7;
+  }
+
+}
+
+ul li ul li a { transition: all 0.5s ease; }
+
+/*Introduction section*/
+
+.container {
+    margin:50px auto;
+    width:80%;
+height:600px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    height:550px;
+    margin:0 auto;
+    width:90%;
+}
+
+.text-column {
+    margin:20px auto;
+    font-size:18px;
+    text-align: center;
+    width:50%;
+}
+
+h1 {
+    font-size:58px;
+    margin-bottom:20px;
+}
+
+.example-text1 h1 {
+    width:100%;
+}
+
+.example-text1 p {
+  font-size:22px;
+  padding:0 60px;
+}
+
+.image-column {
+  display:flex;
+justify-content: center;
+align-items: center;
+    width:50%;
+    position: relative;
+    overflow: hidden;
+}
+  
+
+.homepage_image1 {
+   width:80%;
+   padding-top:100px;
+}
+
+/*Courses Carousel*/
+
+.product-carousel {
+  overflow: hidden;
+  width: 65%;
+  height:550px;
+  margin:0 auto 50px auto;
+  padding-bottom:50px;
+  padding-left:20px;
+}
+
+.courses-heading {
+  text-align:center;
+  font-size:48px;
+  margin-bottom:20px;
+}
+
+.carousel-wrapper {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  justify-content:space-between;
+}
+
+.carousel-slides,
+.carousel-slides2 {
+  display:flex;
+  width:100%;
+  overflow: visible; /* Ensure all slides are visible */
+  transition: transform 0.5s ease;
+}
+
+.carousel {
+  display: flex;
+  margin:0 auto;
+  align-items:center;
+}
+
+.product-item {
+  width:360px;
+  padding:40px 40px;
+  margin-right:60px;
+  border-radius:5px;
+  border: none;
+  scroll-snap-align: start;
+  background-color: #EDEDED;
+  text-align: center;
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.prev-slide {
+  position: absolute;
+  top: 115%;
+  left: 13%;
+  transform: translateY(-50%);
+  background-color: grey;
+  border-radius:50%;
+  height:40px;
+  width:40px;
+  border: none;
+  color: #000;
+  text-align: center;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1; /* Ensure buttons are above the carousel */
+}
+
+.next-slide {
+  position: absolute;
+  top: 115%;
+  right: 14%;
+  transform: translateY(-50%);
+  background-color: grey;
+  border-radius:50%;
+  height:40px;
+  width:40px;
+  border: none;
+  color: #000;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 1; /* Ensure buttons are above the carousel */
+}
+.product-item:nth-child(3) {
+  margin-right:0px;
+}
+
+.product-item:hover {
+  box-shadow: 0 0 10px 0 rgba(82, 79, 79, 0.562);
+  transform: scale(1.1);
+}
+
+.product-content {
+  text-align:center;
+}
+
+.product-content h2 {
+  font-size:24px;
+padding-bottom:10px;
+}
+
+.price {
+  font-size: 16px;
+}
+
+.get-started-button {
+  margin-top: 20px;
+  background-color: inherit;
+  color: #000;
+  border: 1px solid black;
+  padding: 13px 21px;
+  font-size:16px;
+  cursor: pointer;
+  width:60%;
+}
+
+.product-carousel .checklist {
+  list-style: none;
+  padding: 0;
+  font-size:16px;
+  margin-top: 20px;
+  width:265px;
+}
+
+.checklist li {
+  display: flex;
+justify-content:center;
+align-items: center;
+margin:0 auto;
+}
+
+.checklist li:last-child {
+  margin-bottom:0;
+}
+
+.checklist li::before {
+  content: '\2713'; /* Checkmark Unicode */
+  margin-right: 10px;
+}
+
+  
+.email-subscription-section {
+    background-color: #383938;
+    padding: 40px; /* Add padding for spacing */
+    height: 100%;
+    position: relative; /* Set position to relative */
+  }
+  
+  .form-container {
+    margin:0 auto;
+    text-align: center;
+  }
+  
+  .form-heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color:#fff;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group input {
+    width: 20%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  .form-subtext {
+    color:#fff;
+    margin-bottom:20px;
+    font-size:17px;
+  }
+  
+  input[type="submit"] {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    font-size: 19px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+ input::placeholder {
+    font-size:18px;
+  }
+  
+/* Popup Overlay */
+#popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+#popup-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#popup-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.pop-up-form-container {
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    width: 90%;
+    padding:0;
+}
+
+.form-left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    height: 100%;
+    padding-left:20px;
+}
+
+.form-right {
+    width:35%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-logo img {
+    width:300px;
+    height:auto;
+}
+
+#popup-form input[type="email"],
+#popup-form input[type="text"],
+#popup-form input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin:10px auto;
+}
+
+#popup-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#popup-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+#close-popup {
+    position: absolute;
+    top: 10px; /* Adjust top position */
+    right: 10px; /* Align to the right */
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#close-popup:hover {
+    background-color: #999;
+}
+
+
+  
+  .email-subscription-section {
+    display: none;
+  }
+
+
+  /* Add this media query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .header-navigation {
+    height: auto; /* Remove fixed height */
+    padding: 10px 5%; /* Adjust padding */
+  }
+  
+  .logo {
+    width: 120px; /* Reduce logo size */
+  }
+
+  .searchbar {
+    width: 150px; /* Reduce search bar width */
+  }
+
+  .search-button {
+    width: 40px; /* Increase search button width */
+    height: 38px; /* Keep search button height */
+  }
+  
+  .container {
+    margin:50px auto;
+    height:400px;
+  }
+  .row {
+    column-gap:40px;
+    width:100%;
+    height:400px;
+  }
+
+  
+  .text-column {
+    font-size: 16px; /* Adjust text size */
+    width:45%;
+  }
+
+  .example-text1 h1 {
+    font-size: 40px;
+  }
+
+  .example-text1 h1 {
+    font-size: 36px; /* Adjust the font size of the heading */
+}
+
+.example-text1 p {
+    font-size: 16px; /* Adjust the font size of the paragraphs */
+    padding: 0px; /* Adjust the horizontal padding of the paragraphs */
+    margin-bottom: 10px; /* Adjust the bottom margin of the paragraphs */
+    text-align:Center;
+}
+
+.image-column {
+  width:60%;
+}
+
+.homepage_image1 {
+  width: 400px;
+  height: auto; /* Keep aspect ratio */
+  max-width: 500px; /* Limit maximum width */
+  display: block; /* Ensure it's displayed as a block */
+  margin: 0 auto; /* Center the image */
+  padding-top:70px;
+}
+
+  .product-carousel {
+    width: 90%; /* Make carousel full width */
+    padding-left: 0; /* Remove left padding */
+ height:400px;
+    margin-bottom:5px;
+  }
+
+  .courses-heading {
+    font-size:38px;
+  }
+
+  .carousel-wrapper {
+    justify-content: flex-start; /* Align slides to the start */
+  }
+
+  .carousel-slides,
+  .carousel-slides2 {
+    overflow-x: auto; /* Allow horizontal scrolling */
+    scroll-snap-type: unset; /* Disable scroll snap */
+    width: auto; /* Allow content to expand */
+    scroll-behavior: smooth; /* Smooth scrolling */
+    padding-bottom: 10px; /* Add bottom padding */
+  }
+
+  .product-item {
+    margin-right: 20px; /* Reduce margin between items */
+    margin-bottom: 20px; /* Add bottom margin */
+    padding: 20px; /* Adjust padding */
+    width: 217px; /* Reduce product item width */
+  }
+
+  .product-content h2 {
+    font-size:16px;
+  }
+
+  .get-started-button {
+    width:70%;
+    padding:10px;
+    font-size:14px;
+  }
+
+ .product-carousel .checklist {
+    text-align: center;
+    width:180px;
+    padding-right:10px;
+  }
+  
+
+  .prev-slide,
+  .next-slide {
+    top: auto; /* Remove top positioning */
+    bottom: 20px; /* Position buttons at the bottom */
+    font-size:28px;
+    width:30px;
+    height:30px;
+
+  }
+
+  .prev-slide {
+    left:0;
+    padding-bottom:20px;
+  }
+
+  .next-slide {
+    right:0;
+  }
+
+  
+  .price,
+  .checklist {
+    font-size: 14px; /* Adjust price and checklist size */
+  }
+
+  .form-group input {
+    width: 100%; /* Make input fields full width */
+  }
+
+  .form-logo img {
+    width: 200px; /* Adjust form logo size */
+  }
+
+
+
+}
+
+  .back-home-link {
+    margin-left:150px;
+    margin-top:50px;
+    text-decoration: underline;
+  }
+ 
+ /* Course Page */
+.course-page {
+  display: flex;
+  margin:30px 150px 30px 150px;
+  align-items:center;
+}
+
+.image-section {
+  margin-right: 20px;
+  margin-top:0px;
+}
+
+.image-section img {
+  width: 700px;
+}
+
+.course-details {
+  flex: 1;
+  max-width: calc(100% - 320px);
+text-align:Center;
+margin-top:0px;
+}
+
+.course-details-header {
+  font-size: 36px;
+  padding:0 100px;
+  margin: 40px 0 15px 0;
+}
+
+.course-details p.price {
+  font-size: 18px;
+  margin-bottom: -20px;
+}
+
+.description-section {
+  margin: 50px auto 0 auto;
+  max-width: 600px;
+}
+
+
+.buttons {
+margin-top:50px;
+display:inline-block;
+margin:30px auto;
+}
+
+.buttons button {
+  display:block;
+  width:100px;
+  height:50px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.recommended-books {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto 20px auto;
+  overflow:auto;
+}
+
+.rec-books-heading {
+  margin-bottom:30px;
+}
+
+.rec-books-container {
+  display: flex;
+  overflow-x: hidden; /* Hide horizontal overflow for carousel */
+  justify-content: center;
+  width:100%;
+}
+
+.rec-book {
+  flex: 0 0 auto;
+  margin-right: 60px;
+}
+
+.rec-book:last-child {
+  margin-right: 0;
+}
+
+.rec-book img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+}
+
+.rec-book-title {
+  margin: 5px 0 0 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Limit the title to 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: wrap;
+ width: 199px; /* Ensures the title doesn't overflow the container */
+ text-align:center;
+}
+
+.rec-book-price {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align:center;
+}
+
+.rec-prev-slide,
+.rec-next-slide {
+  display: none; /* Initially hide scroll buttons */
+}
+
+@media only screen and (max-width:1440px) {
+  .course-page {
+    margin:0 0 30px 0;
+  }
+
+  .course-details p.price {
+    margin-bottom:-25px;
+  }
+
+  .rec-book {
+    margin-right:35px;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .image-section img {
+    width:500px;
+  }
+
+  .course-details {
+    padding:0 20px;
+}
+
+.course-details-header {
+  font-size:24px;
+  padding:0;
+  margin-top:20px;
+}
+
+.course-details p.price {
+  margin-bottom:-45px;
+  margin-top:-10px;
+}
+
+.description {
+  margin-bottom:-10px;
+}
+
+.buttons {
+  margin:0;
+}
+
+.recommended-books {
+  margin:0;
+}
+
+.rec-books-container {
+  justify-content: start;
+  width: 100%; /* Set the width of the container */
+  max-width: 800px; /* Set a maximum width if needed */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  white-space: nowrap; /* Prevent content from wrapping */
+  -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+}
+
+.rec-books-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for Chrome, Safari, and Edge */
+}
+
+}
+
+@media only screen and (max-width:768px) {
+   /* Course Page */
+
+   .back-home-link {
+    margin-bottom:50px;
+    margin-left:35px;
+   }
+   .course-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-section {
+    margin-right:0px;
+  }
+
+  .image-section img {
+    width: 700px; /* Make the image responsive to the container */
+    height: auto;
+  }
+
+  .course-details {
+    max-width: 100%; /* Adjust width to fit smaller screens */
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .course-details-header {
+    font-size: 24px; /* Decrease font size for smaller screens */
+    padding: 0 20px; /* Adjust padding for smaller screens */
+    margin: 20px 0 10px 0;
+  }
+
+  .course-details p.price {
+    margin-bottom:-10px;
+    margin-top:10px;
+  }
+
+  .description-section {
+    margin: 20px auto 0 auto;
+    max-width: 100%; /* Adjust width to fit smaller screens */
+  }
+
+  .buttons {
+    margin-top: 10px;
+  }
+
+  .buttons button {
+    width: auto; /* Make buttons auto width for smaller screens */
+    height: 40px; /* Decrease button height for smaller screens */
+    font-size: 14px; /* Decrease font size for smaller screens */
+  }
+
+    .shopify-buy__btn {
+      color:Red;
+    }
+
+  
+
+
+  /* Show scroll buttons for larger screens */
+  .rec-prev-slide,
+  .rec-next-slide {
+    display: block;
+  }
+
+  .rec-book {
+    margin-right: 50px; /* Adjust margin for smaller screens */
+    width:170px;
+  }
+
+  .rec-book-title {
+    text-align:center;
+    width:170px;
+  }
+
+  .rec-book img {
+    width: 170px;
+    height: 270px;
+    object-fit: cover; /* Maintain aspect ratio and cover container */
+  }
+}
+
+@media only screen and (max-width:425px) {
+
+  .course-page {
+    margin:0;
+  }
+  .image-section img {
+    width:375px;
+  }
+  .course-details {
+    width:400px;
+  }
+
+  .rec-book img {
+    width:150px;
+    height:250px;
+  }
+
+  .rec-book {
+    margin-right: 30px; /* Adjust margin for smaller screens */
+    width:150px;
+  }
+
+  .rec-book-title {
+    width:150px;
+  }
+}
+
+@media only screen and (max-width:375px) {
+.image-section img {
+  width:325px;
+}
+
+.course-details {
+  padding:0 20px;
+}
+
+.rec-books-heading {
+  margin-top:15px;
+}
+
+.rec-book {
+  width:130px;
+  margin-right:25px;
+}
+
+.rec-book img {
+  width:130px;
+  height:230px;
+}
+
+.rec-book-title {
+  width:130px;
+}
+}
+
+@media only screen and (max-width:320px) {
+.image-section img {
+  width:280px;
+}
+}
